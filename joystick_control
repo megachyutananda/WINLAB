@@ -33,7 +33,7 @@ def joy_callback(js.data, Output.data):
     if data.buttons[0] == 1:      
         move_circle()
 
-    # publish cmd_vel move command to Turtlesim
+    # publish cmd_vel move command to joystick
     pub.publish(twist)
 
 if __name__ == '__main__':
